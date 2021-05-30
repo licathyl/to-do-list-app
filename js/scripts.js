@@ -4,6 +4,7 @@ function newItem() {
   let li = $('<li></li>');
   let inputValue = $('#input').val();
   li.append(inputValue);
+  input.value = '';
 
   if (inputValue === '') {
     alert("You must write something!");
@@ -34,5 +35,5 @@ function newItem() {
 
   // Reorders the items
   $('#list').sortable();
-  
+
 }
